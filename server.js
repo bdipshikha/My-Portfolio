@@ -1,9 +1,6 @@
 var express = require('express')
 var app = express();
 
-// allow session
-var session = require("express-session");
-
 app.use(express.static(__dirname + '/images'));
 app.use(express.static(__dirname + '/public'));
 
