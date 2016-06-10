@@ -22,8 +22,8 @@ app.get("/contactMe", function(req, res) {
 });
 
 
-app.listen('3000')
-console.log("Listing to port 3000")
+app.listen('80')
+console.log("Listing to port 80")
 
 
 // when "express.static" is used with a relative path, "app.get" is combined with RES.REDIRECT("FILENAME")
