@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
     <style>
-  		body {
-  			background-color: #dddfd4;
-  			color: #245C4F;
-  			margin-top: 10px;
-  			padding-left: 10px;
-  			padding-right: 10px;
-  			font-family: amaranth;
-  		}
+      body {
+        background-color: #dddfd4;
+        color: #245C4F;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: amaranth;
+      }
 
-  		h6 {
-  			position: absolute;
-  			font-size: 16px;
-  			left: 550px;
-  		}
+      h6 {
+        position: absolute;
+        font-size: 16px;
+        left: 550px;
+      }
 
-  		li {
-  			border-radius: 3px;
-  			margin: 2px;
-  			font-weight: bold;
-  		}
+      li {
+        border-radius: 3px;
+        margin: 2px;
+        font-weight: bold;
+      }
 
-  		.image-background {
-  			opacity: 0.80;
-  		}
+      .image-background {
+        opacity: 0.80;
+      }
 
-  		h1 {
-  			text-align: center;
-  			position: absolute;
-  			top: 90px;
-  			width: 100%;
-  			font-size: 90px;
-  			color: #dbc3d0;
+      h1 {
+        text-align: center;
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        font-size: 90px;
+        color: #dbc3d0;
         bottom: 30;
-  		}
+      }
 
-  		h4 {
-  			position: center;  
-  		}
+      h4 {
+        position: center;  
+      }
 
       .links {
         padding-left: 30px;
@@ -65,9 +65,11 @@
       }
 
       .hovereffect {
+        margin-right: 160px;
         margin-left: 60px;
+        padding-right: 20px;
         padding-left: 10px;
-        width: 700px;
+        width: 100%;
         height: 100%;
         float: left;
         overflow: hidden;
@@ -127,10 +129,10 @@
         height: 2px;
         background: #fff;
         content: '';
-        -webkit-transition: -webkit-transform 0.35s;
+/*        -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
         -webkit-transform: translate3d(-100%,0,0);
-        transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0);*/
       }
 
       .hovereffect:hover p:after {
@@ -141,11 +143,11 @@
       .hovereffect a, .hovereffect p {
         color: #dbc3d0;
         opacity: 0;
-        filter: alpha(opacity=0);
+       /* filter: alpha(opacity=0);
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, transform 0.35s;
         -webkit-transform: translate3d(100%,0,0);
-        transform: translate3d(100%,0,0);
+        transform: translate3d(100%,0,0);*/
       }
 
       .hovereffect:hover a, .hovereffect:hover p {
@@ -154,26 +156,26 @@
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
       }
-  	</style>
-		<title>Dipshikha's Portfolio</title>
-	</head>
-	<body>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>		
+    </style>
+    <title>Dipshikha's Portfolio</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>   
     <div class = "row">
-			<div class = "col-md-12">
-				<div class = "image-background">
-					<img src="Screen Shot.png" width="100%" height="400px">
-					<h1>
+      <div class = "col-md-12">
+        <div class = "image-background">
+          <img src="Screen Shot.png" width="100%" height="400px">
+          <h1>
             <i>Welcome 
               to my</br>  
               Portfolio</i></h1>
-				</div>
-			</div>
-		</div></br></br></br>
-		
+        </div>
+      </div>
+    </div></br></br></br>
+    
     <div class = "row">
-      <div class = "col-md-2">
+      <div class = "col-md-2 col-sm-2 col-xs-2">
         <div class = "links">
           <a href="/aboutMe">About Me</a></br></br>
           <a href="/contactMe">Contact Me</a></br></br>
@@ -188,12 +190,12 @@
         </div>
       </div>
       
-      <div class = "col-md-10">
+      <div class = "col-md-10 col-sm-10 col-xs-10">
         <div class = "row">
-          <div class = "col-md-12">
-		        <div class = "hovereffect">
-				      <img class = "img-responsive" src="PE-IndexPage-Screen Shot.png"/>
-				        <div class="overlay">
+          <div class = "col-md-12 col-sm-12 col-xs-12">
+            <div class = "hovereffect">
+              <img class = "img-responsive" src="PE-IndexPage-Screen Shot.png" width="100%"/>
+                <div class="overlay">
                     <p>
                       <u>Programming Exercises</u></br> 
                       <a href = "/progExer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></p>
@@ -203,9 +205,9 @@
         </div></br>
         
         <div class = "row">
-          <div class = "col-md-12">
+          <div class = "col-md-12 col-sm-12 col-xs-12">
             <div class = "hovereffect">
-              <img class = "img-responsive" src="Forum-SearchPage-Screen Shot.png"/>
+              <img class = "img-responsive" src="Forum-SearchPage-Screen Shot.png" width="100%"/>
                 <div class = "overlay"> 
                   <p>
                     <u>Forum app</u></br>
@@ -216,9 +218,9 @@
         </div></br>
         
         <div class = "row">
-          <div class = "col-md-12">
+          <div class = "col-md-12 col-sm-12 col-xs-12">
             <div class = "hovereffect">
-              <img class = "img-responsive" src="Restaurant-IndexPage-Screen Shot.png"/>
+              <img class = "img-responsive" src="Restaurant-IndexPage-Screen Shot.png" width="100%"/>
                 <div class="overlay">
                   <p>
                     <u>Restaurant app</u></br>
@@ -229,9 +231,9 @@
         </div></br>
 
         <div class = "row">
-          <div class = "col-md-12">
+          <div class = "col-md-12 col-sm-12 col-xs-12">
             <div class = "hovereffect">
-              <img class = "img-responsive" src="Notes-IndexPage-Screen Shot.png"/>
+              <img class = "img-responsive" src="Notes-IndexPage-Screen Shot.png" width="100%"/>
                 <div class = "overlay">
                   <p>
                     <u>Notes app</u></br>
@@ -241,5 +243,5 @@
           </div>
         </div></br>
       </div>
-	</body>
+  </body>
 </html>
