@@ -13,8 +13,20 @@ app.get("/aboutMe", function(req, res) {
 	res.redirect("aboutMe.html");
 });
 
-app.get("/projectDetails", function(req, res) {
-	res.redirect("projectDetails.html");
+app.get("/progExer", function(req, res) {
+	res.redirect("progExer.html");
+});
+
+app.get("/forum", function(req, res) {
+	res.redirect("forum.html");
+});
+
+app.get("/restaurant", function(req, res) {
+	res.redirect("restaurant.html");
+});
+
+app.get("/notes", function(req, res) {
+	res.redirect("notes.html");
 });
 
 app.get("/contactMe", function(req, res) {

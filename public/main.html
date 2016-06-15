@@ -3,15 +3,16 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
         background-color: #dddfd4;
         color: #245C4F;
-        margin-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: 10px;
+        /*padding-left: 10px;*/
+        /*padding-right: 10px;*/
         font-family: amaranth;
       }
 
@@ -27,23 +28,26 @@
         font-weight: bold;
       }
 
-      .image-background {
-        opacity: 0.80;
+      .background {
+        width: 100%;
+
+        opacity: 0.90;
       }
 
-      h1 {
+      /*h3 {
         text-align: center;
         position: absolute;
-        top: 90px;
+        top: 75px;
+        left: 0px;
         width: 100%;
-        font-size: 90px;
+        font-size: 70px;
         color: #dbc3d0;
         bottom: 30;
-      }
+      }*/
 
-      h4 {
+/*      h4 {
         position: center;  
-      }
+      }*/
 
       .links {
         padding-left: 30px;
@@ -51,26 +55,26 @@
       }
 
       li {
-        list-style-type: none;
+        /*list-style-type: square;*/
       }
 
       .dropdown-menu {
         box-shadow: none;
         border: 0;
-        background: transparent;
+        background: #dddfd4;
+
       }
 
       #li-link {
-        color: #245C4F;
+        color: red;
+        list-style-type: none;
       }
 
       .hovereffect {
-        margin-right: 160px;
-        margin-left: 60px;
-        padding-right: 20px;
         padding-left: 10px;
+        margin-bottom: 20px;
         width: 100%;
-        height: 100%;
+        height: 200px;
         float: left;
         overflow: hidden;
         position: relative;
@@ -84,7 +88,7 @@
         height: 100%;
         position: absolute;
         overflow: hidden;
-        top: 40px;
+        top: 0px;
         left: 0;
         padding: 50px 20px;
       }
@@ -156,92 +160,155 @@
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
       }
+      .navbar-brand {
+        font-weight: bold;
+      }
+
+      .col-md-offset-4 {
+        padding-top: 200px;
+        text-align: center;
+      }
+      .bounceInDown {
+        animation-duration : 3s;
+      }
+      .bounceInLeft {
+        animation-delay : 4s;
+        animation-duration: 4s;
+      }
+      .bounceInUp {
+        animation-delay : 8s;
+        animation-duration: 4s;
+      }
+
+
     </style>
     <title>Dipshikha's Portfolio</title>
   </head>
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>   
-    <div class = "row">
-      <div class = "col-md-12">
-        <div class = "image-background">
-          <img src="Screen Shot.png" width="100%" height="400px">
-          <h1>
-            <i>Welcome 
-              to my</br>  
-              Portfolio</i></h1>
-        </div>
-      </div>
-    </div></br></br></br>
-    
-    <div class = "row">
-      <div class = "col-md-2 col-sm-2 col-xs-2">
-        <div class = "links">
-          <a href="/aboutMe">About Me</a></br></br>
-          <a href="/contactMe">Contact Me</a></br></br>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
-            <ul class = "dropdown-menu"></br>
-              <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
-              <li><a id="li-link" href="/forum">Forum</a></li>
-              <li><a id="li-link" href="/restaurant">Restaurant</a></li>
-              <li><a id="li-link" href="notes">Notes</a></li>
-            </ul>
-          </li>
-        </div>
-      </div>
-      
-      <div class = "col-md-10 col-sm-10 col-xs-10">
-        <div class = "row">
-          <div class = "col-md-12 col-sm-12 col-xs-12">
-            <div class = "hovereffect">
-              <img class = "img-responsive" src="PE-IndexPage-Screen Shot.png" width="100%"/>
-                <div class="overlay">
-                    <p>
-                      <u>Programming Exercises</u></br> 
-                      <a href = "/progExer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></p>
-                </div>
-            </div>
-          </div>
-        </div></br>
-        
-        <div class = "row">
-          <div class = "col-md-12 col-sm-12 col-xs-12">
-            <div class = "hovereffect">
-              <img class = "img-responsive" src="Forum-SearchPage-Screen Shot.png" width="100%"/>
-                <div class = "overlay"> 
-                  <p>
-                    <u>Forum app</u></br>
-                    <a href = "/forum">Designed a web forum for enthusiasts to exchange ideas.</a></p>
-                </div>
-            </div>
-          </div>
-        </div></br>
-        
-        <div class = "row">
-          <div class = "col-md-12 col-sm-12 col-xs-12">
-            <div class = "hovereffect">
-              <img class = "img-responsive" src="Restaurant-IndexPage-Screen Shot.png" width="100%"/>
-                <div class="overlay">
-                  <p>
-                    <u>Restaurant app</u></br>
-                    <a href = "/restaurant">Designed a web forum for enthusiasts to exchange ideas.</a></p>
-                </div>
-            </div>
-          </div>
-        </div></br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-        <div class = "row">
-          <div class = "col-md-12 col-sm-12 col-xs-12">
-            <div class = "hovereffect">
-              <img class = "img-responsive" src="Notes-IndexPage-Screen Shot.png" width="100%"/>
-                <div class = "overlay">
-                  <p>
-                    <u>Notes app</u></br>
-                    <a href = "/notes">Designed a web forum for enthusiasts to exchange ideas.</a></p>
-                </div>
-            </div>
-          </div>
-        </div></br>
+<!-- responsive navbar starts here -->
+    <div class="navbar navbar-default navbar-fixed-top" style="background:#dddfd4" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Dipshikha's Portfolio</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/aboutMe">About Me</a></li>
+            <li><a href="/contactMe">Contact Me</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
+                <li><a id="li-link" href="/forum">Forum</a></li>
+                <li><a id="li-link" href="/restaurant">Restaurant</a></li>
+                <li><a id="li-link" href="notes">Notes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div> 
+<!-- responsive navbar ends here -->
+    <div class = "row">
+      <div class = "col-md-4 col-md-offset-4">
+<!--         <div class = "image-background">
+          <img class = "background" src="Screen Shot.png" width="100%" height="400px">
+        </div> -->
+          <h3><div class = "animated bounceInDown">Hi! I am</div></h3> 
+          <h1><div class = "animated bounceInLeft">Dipshikha</div></h1>
+          <h3><div class = "animated bounceInUp">Welcome to my portfolio</div></h3>          
+      </div>
+    </div>
+ 
+
+    <!-- <!-- <div class = "row">
+      <div class = "col-md-3">
+        <div class = "hovereffect">
+          <img class = "img-responsive" src="PE-IndexPage-Screen Shot.png" width="100%"/>
+          <div class="overlay">
+            <p>
+            <u>Programming Exercises</u></br> 
+            <a href = "/progExer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></p>
+          </div>
+        </div>
+        <div class = "text">
+          <p>
+            Used Express.JS framework to create a web platform, which will enable user to create posts under specific category, vote a 
+        <b>https://github.com/bdipshikha/Programming-Exercise</b></p>
+        </div>
+      </div>
+
+      <!-- <div class = "col-md-3">
+        <div class = "text">
+          <p>
+          <ul>
+            <li>Used Express.JS framework to create a web platform, which will enable user to create posts under specific category, vote a specific category.</li>
+            <li>User will be able to comment on posts, vote a post.</li> 
+            <li>User will be able to search the site posts title and content.</li>
+          </ul>
+        <b>https://github.com/bdipshikha/Programming-Exercise</b></br></br></p>
+        </div>
+      </div> -->
+
+        
+    <!-- <div class = "row"> -->
+  <!--     <div class = "col-md-3">
+        <div class = "hovereffect">
+          <img class = "img-responsive" src="Forum-SearchPage-Screen Shot.png" width="100%"/>
+          <div class = "overlay"> 
+            <p>
+            <u>Forum app</u></br>
+            <a href = "/forum">Designed a web forum for enthusiasts to exchange ideas.</a></p>
+          </div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+
+      <!-- <div class = "col-md-3">
+        <div class = "text">
+          <p>
+          <ul>
+            <li>Used Express.JS framework to create a web platform, which will enable user to create posts under specific category, vote a specific category.</li>
+            <li>User will be able to comment on posts, vote a post.</li> 
+            <li>User will be able to search the site posts title and content.</li>
+          </ul>
+          <b>https://github.com/bdipshikha/Programming-Exercise</b></br></br></p>
+        </div>
+      </div>
+    </div> -->
+        
+    <!-- <div class = "row"> -->
+   <!--    <div class = "col-md-3">
+        <div class = "hovereffect">
+          <img class = "img-responsive" src="Restaurant-IndexPage-Screen Shot.png" width="100%"/>
+          <div class="overlay">
+            <p>
+            <u>Restaurant app</u></br>
+            <a href = "/restaurant">Designed a web forum for enthusiasts to exchange ideas.</a></p>
+          </div>
+        </div>
+      </div> -->
+   <!--  </div></br> -->
+
+    <!-- <div class = "row"> -->
+      <!-- <div class = "col-md-3">
+        <div class = "hovereffect">
+          <img class = "img-responsive" src="Notes-IndexPage-Screen Shot.png" width="100%"/>
+          <div class = "overlay">
+            <p>
+            <u>Notes app</u></br>
+            <a href = "/notes">Designed a web forum for enthusiasts to exchange ideas.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>     -->   
   </body>
 </html>
