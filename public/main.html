@@ -169,21 +169,17 @@
         text-align: center;
       }
       .bounceInDown {
-        -webkit-perspective: 2000ms;
-        -webkit-backface-visibility: hidden;
-        /*-webkit-animation-duration: 3s;*/
+       
+        -webkit-animation-duration: 2s;
       }
       .bounceInLeft {
-        -webkit-perspective: 2000ms;
--webkit-backface-visibility: hidden;
-        /*-webkit-animation-delay: 4s;*/
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay: 2s;
         
       }
       .bounceInUp {
-        -webkit-perspective: 2000ms;
--webkit-backface-visibility: hidden;
-        -webkit-animation-delay: 8s;
-        /*-webkit-animation-duration: 4s;*/
+        -webkit-animation-delay: 4s;
+        -webkit-animation-duration: 2s;
       }
       /*.navbar {
         background: #dddfd4;
@@ -209,13 +205,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand">Dipshikha's Portfolio</a>
+          <a class="navbar-brand" href = "#">Dipshikha's Portfolio</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/aboutMe">About Me</a></li>
             <li><a href="/contactMe">Contact Me</a></li>
-            <li class="dropdown"><a class="clickable" data-toggle="dropdown">Projects<b class="caret"></b></a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
                 <li><a id="li-link" href="/forum">Forum</a></li>
