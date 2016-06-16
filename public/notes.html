@@ -21,6 +21,37 @@
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href = "#">Dipshikha's Portfolio</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/main.html">Home</a></li>
+            <li><a href="/aboutMe">About Me</a></li>
+            <li><a href="/contactMe">Contact Me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
+                <li><a id="li-link" href="/forum">Forum</a></li>
+                <li><a id="li-link" href="/restaurant">Restaurant</a></li>
+                <li><a id="li-link" href="notes">Notes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+
 	<u><b>Notes App</b></u> - Designed and developed simple and easy to use notes app using Express/Sqlite/jQuery/Ajax
 	<b>https://github.com/bdipshikha/project-notes</b>
 </body>
