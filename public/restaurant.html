@@ -14,7 +14,7 @@
       color: #245C4F;
     }
 
-    .col-md-2 {
+    .col-md-4 {
       margin-top: 80px;
     }
 
@@ -54,6 +54,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a id="li-link" href="/EComm.html">E-Commerce</a></li>
                 <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
                 <li><a id="li-link" href="/forum">Forum</a></li>
                 <li><a id="li-link" href="/restaurant">Restaurant</a></li>
@@ -66,14 +67,13 @@
     </div>
 
     <div class = "row">
-      <div class = "col-md-2 col-md-offset-5">
+      <div class = "col-md-4 col-md-offset-4">
         <h3>Restaurant app</h3>
       </div>
     </div>
     <div class = "row">
       <div class = "col-md-6 col-md-offset-3">
-        <p>A single page web application designed to help the restaurant owners to maintain dishes, menu categories and prices. 
-        Seeded the SQLite database with the dish names, category names, pictures and prices of dishes dynamically using Vanilla   JavaScript on Node.js. Displayed the menu categories, dishes under the categories using AJAX.</p>       
+        <p>A single page web application built with Node.js/Express.js/vanilla JavaScript/sqlite3/AJAX to help restaurant owners to maintain dishes, menu categories and prices. The SQLite database was seeded with the dish names, category names, pictures and prices of dishes as well as category name. Displayed the menu categories, dishes under the categories. </p>       
         <b>https://github.com/bdipshikha/Restaurant</b>
       </div>
     </div> 
@@ -86,20 +86,6 @@
       </div>
     </div>
   </div></br>
-  <script>
-      var slideIndex = 0;
-    carousel();
-      function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none"; 
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {slideIndex = 1} 
-            x[slideIndex-1].style.display = "block"; 
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-  </script>
+  <script src = "scripts/script.js"></script>
 </body>
 </html>

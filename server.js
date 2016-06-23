@@ -13,6 +13,10 @@ app.get("/aboutMe", function(req, res) {
 	res.redirect("aboutMe.html");
 });
 
+app.get("/EComm", function(req, res) {
+	res.redirect("EComm.html");
+});
+
 app.get("/progExer", function(req, res) {
 	res.redirect("progExer.html");
 });

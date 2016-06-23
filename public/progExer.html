@@ -52,6 +52,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a id="li-link" href="/EComm.html">E-Commerce</a></li>
                 <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
                 <li><a id="li-link" href="/forum">Forum</a></li>
                 <li><a id="li-link" href="/restaurant">Restaurant</a></li>
@@ -70,7 +71,15 @@
     </div>
     <div class = "row">
       <div class = "col-md-6 col-md-offset-3">
-        <p>Create a web platform using Express.JS for enthusiasts to exchange ideas. User will be able to create a category, vote a specific category. User will be able to create a post, comment on posts, vote a post. User will be able to search the site posts title and content.</p>
+        <p>
+          Programming Exercises is a web application which enables instructors to maintain a list of programming questions and students to upload an answer to questions.</br></br>
+
+          <u><b>Instructor:</b></u> Instructors can log in as teacher and upload a question, edit old questions and delete questions. An instructor can only see the answers and leave a comment(s) about the answer and is unable to edit answer or delete.</br></br>
+
+          <u><b>Student:</b></u> Students can log in as student to upload answers, edit and delete answer. A student will be unbale to edit or delete questions.</br></br>
+
+          <u><b>Visitor:</b></u> Visitors can browse the website, see the questions and answers but will not be able to edit or delete questions/answers. A visitor will be able to leave a comment(s) on answers.
+        </p>
         <b>https://github.com/bdipshikha/Programming-Exercise</b>
       </div>
     </div>
@@ -87,21 +96,7 @@
       </div>
     </div>
   </div></br>
-  <script>
-      var slideIndex = 0;
-    carousel();
-      function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none"; 
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {slideIndex = 1} 
-            x[slideIndex-1].style.display = "block"; 
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-      }
-  </script>
+  <script src = "scripts/script.js"></script>
 
 </body>
 </html>
