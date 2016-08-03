@@ -3,6 +3,7 @@ var app = express();
 
 app.use(express.static(__dirname + '/images'));
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/pdf'));
 
 app.get('/', function(req, res) {
 	res.redirect("main.html"); //it's __dirname not _dirname
@@ -36,7 +37,10 @@ app.get("/notes", function(req, res) {
 app.get("/contactMe", function(req, res) {
 	res.redirect("contactMe.html");
 });
+app.get("/resume", function(req, res) {
+	res.redirect("resume.pdf")
 
+})
 
 app.listen('80')
 console.log("Listing to port 80")
