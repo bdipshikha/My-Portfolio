@@ -38,7 +38,7 @@ app.get("/contactMe", function(req, res) {
 	res.redirect("contactMe.html");
 });
 app.get("/resume", function(req, res) {
-	res.redirect("resume.pdf")
+	res.redirect("Resume.pdf")
 
 })
 
