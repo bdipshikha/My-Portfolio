@@ -10,15 +10,10 @@
       body {
         background-color: #dddfd4;
         color: #245C4F;
-        margin: 20px;
+        /*margin: 20px;*/
         font-family: amaranth;
         padding-bottom: 15px;
-      }
-
-      h6 {
-        position: absolute;
-        font-size: 16px;
-        left: 550px;
+        overflow-x: hidden;
       }
 
       li {
@@ -44,9 +39,13 @@
         font-weight: bold;
       }
 
+      #top {
+        margin-right: -40px;
+        margin-left: -40px;
+      }
       .col-md-4 {
-        margin-top: 200px;
-        text-align: center;
+        margin-top: 40px;
+        /*text-align: center;*/
       }
 
       .fadeInLeft {
@@ -61,6 +60,100 @@
         animation-delay: 4s;
         animation-duration: 2s;
       }
+
+      .background {
+        position: relative;
+        width: 100%;
+        height: 650px;
+      }
+
+      .overlay {
+        color: white;
+        position: absolute;
+        top: 250px;
+        left: 35%;
+        right: 35%;
+        text-align: center;
+      }
+
+      .overlay h3 {
+        font-size: 40px;
+      }
+
+      .overlay h1 {
+        font-size: 40px;
+      }
+
+      .thumbnail {
+        width: 100%;
+        height: 220px;
+      }
+
+      #projectDetail {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .projectSnippets {
+        background-color: #F1F1F1;
+        height: 400px;
+        margin-right: 15px;
+        /*margin-right: 15px;*/
+      }
+
+      .col-md-4:nth-child(3n) {
+        margin-right: -10px;
+
+      }
+
+      .projectText {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .projectText p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .project {
+        text-align: center;
+        padding-top: 20px;
+      }
+      .projectText h3 {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      a {
+        color: #245C4F;
+      }
+
+
+
+    @media screen and (max-width: 699px) {
+      body {
+        overflow-x: hidden;
+      }
+      .background {
+        width: 100%;
+        height: 400px;
+      }
+      .overlay {
+        top: 130px;
+        left: 20%;
+        right: 20%;
+      }
+
+      .overlay h3 {
+        font-size: 28px;
+      }
+
+      .overlay h1 {
+        font-size: 33px;
+      }
+      .projectText h4 {
+        font-size: 17px;
+      }
+    }
 
 
     </style>
@@ -90,6 +183,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
               <ul class="dropdown-menu">
+                <li><a id="li-link" href="/myBlog.html">Blog</a></li>
                 <li><a id="li-link" href="/EComm.html">E-Commerce</a></li>
                 <li><a id="li-link" href="/progExer">Programming Exercises</a></li>
                 <li><a id="li-link" href="/forum">Forum</a></li>
@@ -103,12 +197,114 @@
     </div> 
 <!-- responsive navbar ends here -->
     
-    <div class = "row">
-      <div class = "col-md-4 col-md-offset-4">
+
+    <div class="row" id="top">
+      <div class="col-md-12">
+        <img class="background" src="DSC06870.JPG" />
+        <div class="overlay">
           <h3><div class = "animated fadeInLeft">Hi! I am</div></h3> 
           <h1><div class = "animated rollIn">Dipshikha</div></h1>
-          <h3><div class = "animated fadeInRight">Welcome to my portfolio</div></h3>          
+          <h3><div class = "animated fadeInRight">Welcome to my portfolio</div></h3>
+        </div>          
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="project"><u> PROJECTS </u></h1>
+      </div>
+    </div>
+
+    <div class="row" id="projectDetail">
+    <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/myBlog.html"><img class="thumbnail" src="dipshikhablog.png"></a>
+          <div class="projectText">
+            <h3> Blog App</h3>
+            <p>A web application built with Ruby on Rails framework using PostgreSQL database and styled with CSS/Bootstrap.</p>
+            <!-- <h4><b>https://github.com/bdipshikha/dipshikhablog</b></h4> -->
+            <!-- <h4><b>Live url - http://dipshikhablog.herokuapp.com</b></h4> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/progExer.html"><img class="thumbnail" src="PE-home-page.png"></a>
+          <div class="projectText">
+            <h3>Programming Exercise App</h3>
+            <p>A web application created with Ruby/Sinatra framework using SQLite database and styled with CSS/Bootstrap.</p>
+            <!-- <h4><b>https://github.com/bdipshikha/ProgrammingExercise</b></h4> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/EComm.html"><img class="thumbnail" src="sparkles.png"></a>
+          <div class="projectText">
+            <h3>E-commerce App</h3>
+            <p>A multi page E-commerce app designed to maintain business using Express.JS framework, SQLite3 database, CSS, Bootstrap/Stripe Credit Card Processing.</p>
+            <!-- <h4><b>https://github.com/bdipshikha/E-commerce</b></h4> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+ 
+    <div class="row" id="projectDetail">
+    <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/forum.html"><img class="thumbnail" src="forum-home-page.png"></a>
+          <div class="projectText">
+            <h3> Forum App </h3>
+            <p> Designed a web forum for enthusiasts to exchange ideas using Node.js, Express.js.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/restaurant.html"><img class="thumbnail" src="Restaurant-IndexPage-Screen Shot.png"></a>
+          <div class="projectText">
+            <h3> Restaurant App </h3>
+            <p> A single page web application designed to help the restaurant owners to maintain dishes, menu categories and prices using JavaScript.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="projectSnippets">
+          <a href="/notes.html"><img class="thumbnail" src="Notes-UpdateNote-Screen Shot.png"></a>
+          <div class="projectText">
+            <h3> Notes App </h3>
+            <p> Designed and developed a single page, simple and easy to use notes app using Express.js/Sqlite/jQuery/Ajax.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
